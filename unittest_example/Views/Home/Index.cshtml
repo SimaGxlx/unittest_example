@@ -1,0 +1,25 @@
+﻿@model unittest_example.Models.register
+
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <form method="post" asp-action="register">
+        <label>Name</label>
+        <input type="text" asp-for="name" />
+        <br />
+        <label>Email</label>
+        <input type="text" asp-for="email" />
+        <br />
+        <label>password</label>
+        <input type="text" asp-for="password" />
+        <br />
+
+        <input type="submit" value="register" />
+
+
+    </form>
+
+</div>
